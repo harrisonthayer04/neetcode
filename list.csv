@@ -20,3 +20,6 @@ SearchInABinarySearchTree.py, Easy, 1, Need to revisit
 InsertIntoABinarySearchTree.py, Medium, 1, Need to revisit
 DeleteNodeInBST.py, Medium, 1, Need to revisit
 BinaryTreeInorderTraversal.py, Easy, 1, Need to revisit
+KthSmallestIntegerInBST.py, Easy, 1, Need to revisit
+ConstructBinaryTreefromPreorderandInorderTraversal.py, Medium, 1, Need to revisit
+BinaryTreeLevelOrderTraversal, Medium, 1, Need to revisit
