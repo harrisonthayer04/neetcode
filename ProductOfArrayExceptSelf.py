@@ -5,7 +5,7 @@ class Solution:
         postfixes = [1] * n      
         
         for index in range(1, n):
-            prefixes[index] = prefixes[index-1]*nums[index-1]
+            prefixes[index] = prefixes[index-1] * nums[index-1]
 
         for index in range(n-2, -1, -1):
             postfixes[index] = postfixes[index+1] * nums[index+1]
