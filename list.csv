@@ -4,7 +4,7 @@ RemoveElement.py, Easy, 1, None
 ConcatentationOfArray.py, Easy, 1, None
 ValidParentheses.py, Easy, 1, Need to revisit
 MinStack.py, Medium, 1, Need to revisit
-ReverseLinkedList.py, Easy, 1, Need to revisit
+ReverseLinkedList.py, Easy, 2, Need to revisit
 MergeTwoSortedLinkedLists.py, Easy, 2, Need to revisit
 DesignLinkedList.py, Medium, 1, Need to revisit
 DesignBrowserHistory.py, Medium, 1, Need to revisit
@@ -65,3 +65,4 @@ Dota2Senate.py, Medium, 1, Need to revisit
 NumberOfRecentCalls.py, Easy, 1, Need to revisit
 DeleteTheMiddleNodeOfALinkedList.py, Medium, 1, Need to revisit
 OddEvenLinkedList.py, Medium, 1, Need to revisit
+MaximumTwinSumOfALinkedist.py, Medium, 1, None
