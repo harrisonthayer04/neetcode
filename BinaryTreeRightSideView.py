@@ -4,27 +4,30 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
-from collections import deque
 class Solution:
     def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
-        output = []
-        
-        queue = deque()
+        right_most = []
 
-        if root:
-            queue.append(root)
-
-        while len(queue) > 0:
-            for i in range(len(queue)):
-                current_node = queue.popleft()
-                if i is 0:
-                    output.append(current_node.val)
-                if current_node.right:
-                    queue.append(current_node.right)
-                if current_node.left:
-                    queue.append(current_node.left)
-        return output
+        def bfs(nodes):
+            if not nodes: return
+            right_most.append(nodes[-1].val)
+            children = []
+            for node in nodes:
+                if node.left: children.append(node.left)
+                if node.right: children.append(node.right)
+            bfs(children)
+        if root: bfs([root])
+        return right_most
 
 
-# The number of right most nodes is = the height of the tree
-# Take the right most at each height
+
+
+# Maintain a level
+# at each level find the right most node
+# stack = []
+#          ^
+# children = [5, 4] # Each time the last node in the children (if children are inserted into the array correctly) is the right most node
+
+#    1
+# 2     3
+#   5      4
