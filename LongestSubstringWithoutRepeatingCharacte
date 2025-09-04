@@ -1,0 +1,21 @@
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        last = {}
+        left = 0
+        best = 0
+
+        for right, character in enumerate(s):
+            if character in last and last[character] >= left:
+                left = last[character] + 1
+            last[character] = right
+            best = max(best, right - left + 1)
+        return best
+        
+# input = "abcdefabc"
+#              ^   ^
+# Possible solutions:
+# 1. Generate all possible substrings and then find the longest one
+#    that has no duplicates characters.
+# 2. Try the whole string, iteratively reduce the number of
+#    characters checking if its valid each time
+# window
